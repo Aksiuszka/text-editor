@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Edytor tekstu</title>
+</head>
+<body>
+    <header>
+        <div class="initiate">
+        <h1>Mini edytor tekstu</h1>
+        <br>
+        <h3>NumPy wariacja na temat MS word ;)</h3>
+    </div>
+    </header>
+    <div class="wrapper">
+    <form>
+        <!--Przycisk wyrównaj do lewo-->
+        <button type="button" data-cmd="justifyLeft">
+            <i class="fa fa-align-left" aria-hidden="true"></i>
+        </button>
+           <!--Przycisk wyrównaj do środka-->
+           <button type="button" data-cmd="justifyCenter">
+            <i class="fa fa-align-center" aria-hidden="true"></i>
+        </button>
+           <!--Przycisk wyrównaj do prawo-->
+           <button type="button" data-cmd="justifyRight">
+            <i class="fa fa-align-right" aria-hidden="true"></i>
+        </button>
+           <!--Przycisk wyrównaj calkowicie-->
+           <button type="button" data-cmd="justifyFull">
+            <i class="fa fa-align-justify" aria-hidden="true"></i>
+        </button>
+           <!--Przycisk ukośny-->
+           <button type="button" data-cmd="italic">
+            <i class="fa fa-italic" aria-hidden="true"></i>
+        </button>
+        <!--Przycisk pogrubiony-->
+        <button type="button" data-cmd="bold">
+            <i class="fa fa-bold" aria-hidden="true"></i>
+        </button>
+        <!--Przycisk podkreślony-->
+        <button type="button" data-cmd="underline">
+            <i class="fa fa-underline" aria-hidden="true"></i>
+        </button>
+        <!--Przycisk wstaw liste numerowana-->
+        <button type="button" data-cmd="insertOrderedList">
+            <i class="fa fa-list-ol" aria-hidden="true"></i>
+        </button>
+        <!--Przycisk wstaw liste nienumerowana-->
+        <button type="button" data-cmd="insertUnorderedList">
+            <i class="fa fa-list-ul" aria-hidden="true"></i>
+        </button>
+        <!--Przycisk wstaw obraz-->
+        <button type="button" data-cmd="insertImage">
+            <i class="fa fa-picture-o" aria-hidden="true"></i>
+        </button>
+        <!--Przycisk wstaw link-->
+        <button type="button" data-cmd="createLink">
+            <i class="fa fa-link" aria-hidden="true"></i>
+        </button>
+        <!--Przycisk pokaż kod-->
+        <button type="button" data-cmd="showCode">
+            <i class="fa fa-code" aria-hidden="true"></i>
+        </button>
+    </form>
+        
+        <iframe id="output" name="textFrame"></iframe>
+    </div>
+    
+
+    
+  <script src="app.js"></script>  
+</body>
+</html>

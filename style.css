@@ -1,0 +1,47 @@
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+.initiate{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.initiate h1{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 50px;
+    padding:5px;
+}
+.initiate h3{
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+
+ .wrapper{
+     display: flex;
+     justify-content: center;
+     flex-direction: column;
+     align-items: center;
+ }
+form{
+    margin-left: 10px;
+}
+
+button{
+    width: 35px;
+    height: 35px;
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+#output{
+    width: 720px;
+    height: 600px;
+}
+
+button:active {
+    background-color: coral;
+}
